@@ -1,0 +1,16 @@
+Django
+python-decouple
+django-allauth
+django-allauth-2fa
+django-two-factor-auth
+django-otp
+django-crispy-forms
+crispy-bootstrap5
+django-phonenumber-field
+phonenumbers
+djangorestframework
+django-cors-headers
+whitenoise
+psycopg2-binary
+Pillow
+qrcode

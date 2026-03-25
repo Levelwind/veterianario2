@@ -1,0 +1,21 @@
+templates\account\login.html:59:          <a class="small text-decoration-none" href="{% url 'account_reset_password' %}">¿Olvidaste tu contraseña?</a>
+templates\account\login.html:90:        <p class="text-muted small mb-1 d-inline">¿No tienes cuenta?</p>
+templates\account\password_reset.html:9:  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+templates\base.html:10:  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+templates\citas\confirmar_cancelar.html:10:        <h5 class="mt-3">¿Cancelar la cita de <strong>{{ cita.mascota.nombre }}</strong>?</h5>
+templates\citas\confirmar_eliminar.html:10:        <h5 class="mt-3">¿Eliminar definitivamente la cita de <strong>{{ cita.mascota.nombre }}</strong>?</h5>
+templates\dashboard\admin.html:130:          <a href="{% url 'usuarios:lista_usuarios' %}?rol=veterinario" class="text-primary small">Ver todos los veterinarios →</a>
+templates\two_factor\core\login.html:89:            <a class="forgot-link small text-decoration-none" href="{% url 'account_reset_password' %}">¿Olvidaste tu contraseña?</a>
+templates\two_factor\core\login.html:123:          <p class="text-muted small mb-1 d-inline">¿No tienes cuenta?</p>
+templates\two_factor\core\setup.html:19:      <p class="text-muted text-center mb-4" style="font-size: 1.05rem;">¿Cómo prefieres generar o recibir tus códigos de seguridad?</p>
+templates\two_factor\core\setup.html:30:          <p class="text-muted small mb-1">¿La cámara no funciona?</p>
+templates\usuarios\detalle_veterinario.html:7:  <a href="{% url 'usuarios:lista_usuarios' %}?rol=veterinario" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i>Volver</a>
+templates\usuarios\lista_usuarios.html:10:  <a href="?rol=cliente" class="btn btn-sm {% if rol_filtro == 'cliente' %}btn-primary{% else %}btn-outline-primary{% endif %} me-1">Clientes</a>
+templates\usuarios\lista_usuarios.html:11:  <a href="?rol=veterinario" class="btn btn-sm {% if rol_filtro == 'veterinario' %}btn-success{% else %}btn-outline-success{% endif %} me-1">Veterinarios</a>
+templates\usuarios\lista_usuarios.html:12:  <a href="?rol=administrador" class="btn btn-sm {% if rol_filtro == 'administrador' %}btn-warning{% else %}btn-outline-warning{% endif %}">Administradores</a>
+templates\usuarios\lista_usuarios.html:32:       onclick="return confirmar('¿{% if u.activo %}Desactivar{% else %}Activar{% endif %} a {{ u.get_full_name }}?')">
+templates\usuarios\registro.html:29:      <span class="text-muted small">¿Ya tienes cuenta?</span>
+templates\usuarios\veterinarios.html:101:        <a href="{% url 'citas:agendar' %}?vet={{ vet.id }}" class="btn btn-primary btn-sm w-100 rounded-pill mt-auto">
+static\js\main.js:169:  return confirm(mensaje || '¿Estás seguro de esta acción?');
+README.md:85:> **¿Por qué en ese orden?** La app `usuarios` define el modelo `Usuario` personalizado, del cual dependen `mascotas` y `citas`. Siempre migra `usuarios` primero.
+README.md:432:| `GET`  | `/api/horarios/?veterinario_id=1&fecha=2024-12-20` | Horarios disponibles |

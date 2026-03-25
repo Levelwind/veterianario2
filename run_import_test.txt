@@ -1,0 +1,52 @@
+﻿venv\Scripts\python.exe
+ : Traceback (most 
+recent call last):
+En línea: 1 Carácter: 1
++ venv\Scripts\python.e
+xe -c "import 
+psycopg2; print(psycopg
+2.__version ...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : 
+NotSpecified: (Tra    
+ceback (most recent ca 
+   ll last)::String) 
+[],     RemoteException
+    + 
+FullyQualifiedErrorI   
+ d : NativeCommandError
+ 
+  File "<string>", 
+line 1, in <module>
+    import psycopg2; pr
+int(psycopg2.__version_
+_)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\Sebas\
+AppData\Local\Packages\
+5319275A.WhatsAppDeskto
+p_cv1g1gvanyjgm\LocalSt
+ate\sessions\57BDA76FF5
+284C7D27D8DD51E11083379
+90C1E1D\transfers\2026-
+13\veterinaria\veterina
+ria\venv\Lib\site-packa
+ges\psycopg2\__init__.p
+y", line 64, in 
+<module>
+    from 
+psycopg2._psycopg 
+import (               
+      # noqa
+    ...<10 lines>...
+    )
+ImportError: DLL load 
+failed while importing 
+_psycopg: El nombre 
+del archivo o la 
+extensi¾n es demasiado 
+largo.

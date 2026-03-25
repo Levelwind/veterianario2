@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingresar Sistema Veterinario | Sistema Veterinario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/static/css/main.css">
+  
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/"><i class="bi bi-heart-pulse-fill text-primary me-2"></i>VetCare</a>
+    <div class="ms-auto d-flex gap-2">
+      <a href="/cuentas/account/login/" class="btn btn-outline-primary btn-sm">Iniciar Sesión</a>
+      <a href="/registro/" class="btn btn-primary btn-sm">Registrarse</a>
+    </div>
+  </div>
+</nav>
+<div class="container py-4">
+  
+  
+<div class="auth-wrapper py-5">
+  <div class="auth-card mx-auto shadow-lg" style="max-width: 450px;">
+    
+    <div class="text-center mb-4">
+      <i class="bi bi-heart-pulse-fill text-primary" style="font-size: 3rem;"></i>
+      <h2 class="fw-bold mt-2 text-dark">VetCare</h2>
+      <p class="text-muted mb-0">Ingresa a tu cuenta para continuar.</p>
+    </div>
+
+    <form class="login needs-validation" method="POST" action="/cuentas/login/" novalidate>
+      <input type="hidden" name="csrfmiddlewaretoken" value="cgOEfyPkVKgRu70MDvwqJo0H28Lsbq22sYI3wy2Kb1uqMNMVcbsK9QD8RvmpJWqn">
+      
+      <!-- Renderiza los campos usando crispy forms -->
+      
+
+<div id="div_id_login" class="mb-3"> <label
+                for="id_login" class="form-label requiredField">
+                Correo electrónico<span class="asteriskField">*</span> </label> <input type="email" name="login" autocomplete="email" placeholder="Dirección de correo electrónico" maxlength="320" class="textinput form-control" required id="id_login"> </div> <div id="div_id_password" class="mb-3"> <label
+                for="id_password" class="form-label requiredField">
+                Contraseña<span class="asteriskField">*</span> </label> <input type="password" name="password" placeholder="Contraseña" autocomplete="current-password" class="passwordinput form-control" required aria-describedby="id_password_helptext" id="id_password"> <div id="id_password_helptext" class="form-text"><a href="/cuentas/password/reset/">¿Ha olvidado tu contraseña?</a></div> </div> <div class="mb-3"> <div id="div_id_remember" class="form-check"> <input type="checkbox" name="remember" class="checkboxinput form-check-input" id="id_remember"> <label for="id_remember" class="form-check-label">
+                    Recordarme
+                </label> </div> </div>
+
+      
+      
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <a class="small text-decoration-none" href="/cuentas/password/reset/">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <div class="d-grid mt-2 mb-4">
+        <button class="btn btn-primary btn-lg" type="submit">
+          Iniciar Sesión <i class="bi bi-arrow-right-short"></i>
+        </button>
+      </div>
+    </form>
+
+    <div class="divider my-4 d-flex align-items-center">
+      <hr class="flex-grow-1 border-secondary opacity-25">
+      <span class="px-3 text-muted small">O CONTINÚA CON</span>
+      <hr class="flex-grow-1 border-secondary opacity-25">
+    </div>
+
+    <div class="d-grid gap-3">
+      
+      <a href="/cuentas/google/login/" class="btn btn-outline-dark d-flex align-items-center justify-content-center gap-2 py-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" width="20">
+        Google
+      </a>
+      <a href="/cuentas/facebook/login/" class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2 py-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook" width="20">
+        Facebook
+      </a>
+    </div>
+    
+    <div class="text-center mt-4 pt-3 border-top">
+      <p class="text-muted small mb-1">¿No tienes cuenta?</p>
+      <a href="/registro/" class="text-decoration-none fw-semibold border border-primary px-3 py-1 rounded-pill d-inline-block mt-1">
+        Regístrate como Cliente
+      </a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/static/js/main.js"></script>
+
+</body>
+</html>
