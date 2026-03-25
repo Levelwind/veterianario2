@@ -213,18 +213,7 @@ Para tener datos de ejemplo (admin, veterinarios, clientes, mascotas y una cita)
 python manage.py shell < scripts/crear_datos.py
 ```
 
-Esto crea los siguientes usuarios:
 
-| Rol           | Email                       | Contraseña      |
-|---------------|-----------------------------|-----------------|
-| Administrador | admin@vetcare.com           | Admin2024!      |
-| Veterinario   | levelwind55@gmail.com       | vet1234.        |
-| Cliente       | sebastiansxd8@gmail.com     | levelwind.      |
- test               test2fa@vetcare.com        TestPassword123! |
- veterinario        laura.mendoza@vetcare.com   LauraVet123!
-  veterinario     andres.quiroga@vetcare.com      AndresVet123!        
-  veterianrio   camila.rojas@vetcare.com       CamilaVet123!
-> ⚠️ **IMPORTANTE**: Estas contraseñas son solo para pruebas. Cámbialas antes de poner el proyecto en producción.
 
 ---
 
